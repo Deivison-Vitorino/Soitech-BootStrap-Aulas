@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+    <title>Slide Show</title>
+
+
+</head>
+<body>
+    <section>
+        <div class="container mt-3">
+
+            <!--Seleção de slide-->
+            <div id="meuslide" class="corousel carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#meuslide" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#meuslide" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#meuslide" data-bs-slide-to="2"></li>
+                </ol>
+            <!--Seleção de slide-->
+
+
+                <!--Slide Show-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/images-site.webp" alt="promo1">
+                        <div class="carousel-caption">
+                            <h6>Meu primeiro slide</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/imagem.jpeg" alt="promo2">
+                        <div class="carousel-caption">
+                            <h6>Meu segundo slide</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/image2.webp" alt="promo3">
+                        <div class="carousel-caption">
+                            <h6>Meu terceiro slide</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--Slide Show-->
+
+
+                 <!--Botão de Navegação-->
+                <a class="carousel-control-prev" href="#meuslide" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+
+
+                <a class="carousel-control-next" href="#meuslide" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </a>
+                <!--Botão de Navegação-->
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+    <title>Imput</title>
+
+
+</head>
+<body>
+    <section>
+        <div class="container">
+
+
+            <!-- Campo de seleção de cor -->
+            <div class="row mt-5">
+                <label class="form-label col-3">Selecione uma cor:</label>
+                <div class="col-8">
+                    <input class="form-control form-control-color" type="color" name="Cor">
+                </div>
+            </div>
+            <!-- Campo de seleção de cor -->
+            
+
+            <!--Campo de curso -->
+            <div class="row mt-5">
+                <label class="form-label col-3">Qual é o seu Curso?</label>
+                <div class="col-8">
+                    <input list="listaCurso" class="form-control" name="Cursos">
+                        <datalist id="listaCurso">
+                            <option value="HTML 5"></option>
+                            <option value="FULL STACK JS"></option>
+                            <option value="PYTHON"></option>
+                            <option value="JAVA"></option>
+                            <option value="DJANGO"></option>
+                        </datalist>
+                </div>
+            <!--Campo de curso -->
+
+
+                <!--Campo de seleções pré definidas-->
+                <div class="row mt-5">
+                    <label class="form-label col-3">Selecione o Curso</label>
+                    <div class="col-8">
+                        <select required class="form-select">
+                            <option value="">HTML5</option>
+                            <option value="">FULL STACK JS</option>
+                            <option value="">PYTHON</option>
+                            <option value="">JAVA</option>
+                            <option value="">DJANGO</option>
+                        </select>
+                    </div>
+                <!--Campo de seleções pré definidas-->
+
+
+                <!-- Campo de seleções pre-definidas -->
+                    <div class="row mt-5">
+                        <label class="form-label col-3">Central de Notificações: </label>
+                        <div class="col-8">
+                            <div class="form-check">
+                                <input id="promo" type="checkbox" class="form-check-input" name="Promoções">
+                                <label for="promo" class="form-check-label">Promoções</label>
+                            </div>
+                            
+
+                            <div class="col-4">
+                                <input id="notif" type="checkbox" class="form-check-input" name="Notificações">
+                                <label for="notif" class="form-check-label">Notificações</label>
+                            </div>
+
+
+                            <div class="col-4">
+                                <input id="info" type="checkbox" class="form-check-input" name="Informações">
+                                <label for="info" class="form-check-label">Informações</label>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Campo de seleções pre-definidas -->
+
+
+                <!-- campos com checkbox -->
+                    <div class="row mt-5">
+                        <label class="form-label col-3">Gênero</label>
+                        <div class="col-8">
+                            <div class="form-chek form-chek-inline">
+                                <input id="masculino" class="form-check-input" required type="radio" name="genero">
+                                <label for="masculino" class="form-check-label">masculino</label>
+                            </div>
+                        
+
+                            <div class="form-chek form-chek-inline">
+                                <input id="feminino" class="form-check-input" required type="radio" name="genero">
+                                <label for="feminino" class="form-check-label">feminino</label>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-5">
+                            <div class="col">
+                                <a href="file:///C:/Users/Daivid/OneDrive/%C3%81rea%20de%20Trabalho/Exercicio-fullstack-bootstrap/menu.html#"><button type="submit" class="btn btn-primary">Enviar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- campos com checkbox -->
+
+
+                <!-- campos com switch-->
+                    <div class="row mt-5">
+                        <label class="form-check-label col-3">Gostaria de Rceber Promoções?</label>
+                        <div class="col-8">
+                            <div class="form-chek form-switch">
+                                <input id="novidade" class="form-check-input" type="checkbox" name="promo">
+                                <label for="novidade" class="form-chek-label">Receber Promoções e novidades</label>
+                            </div>
+                        </div>
+                    </div>
+                <!-- campos com switch -->
+
+
+                <!-- input com range-->
+                    <div class="row mt-5">
+                        <label class="col-12">Faixa de Preços</label>
+                        <div class="col-12">
+                            <input class="form-range" max="30" type="range" name="precos">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
